@@ -13,11 +13,11 @@ $(document).ready(function(){
     });
     $('.header__link').click(function(){
         $('.header__burger,.header__menu,.header__row_top').toggleClass('active');
-        $('body').toggleClass('lock');
+        $('body').removeClass('lock');
           if($('.header__logo').hasClass('scrolled')){
-            $('.header__logo').toggleClass('scrolled');
+            $('.header__logo').addClass('scrolled');
         }else{
-            $('.header__logo').toggleClass('scrolled');
+            $('.header__logo').removeClass('scrolled');
         }
     });
     //============= sticky header ===============
